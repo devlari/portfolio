@@ -8,11 +8,11 @@ export function DropdownItem(item: ItemProps) {
     <li
       style={{
         width: "95%",
-        padding: "5px",
+        padding: "10px",
       }}
     >
       <div className="d-flex justify-content-between">
-        <span className="fw-bold">{item.name}</span>
+        <span className="fw-bold mb-2">{item.name}</span>
         <span>{item.percent}%</span>
       </div>
       <div className="progress">

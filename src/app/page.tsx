@@ -75,14 +75,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div
-        className="container"
-        style={{
-          height: "5000px",
-        }}
-        id="habilidades"
-      >
-        <h2 className="text-center fw-bold mb-5">Habilidades</h2>
+      <div className="container" id="habilidades">
+        <h2 className="text-center fw-bold mt-5">Habilidades</h2>
         <div className="row">
           <div className="col-md-10 offset-md-1">
             <Dropdown
@@ -92,23 +86,49 @@ export default function Home() {
                 { name: "HTML", percent: 90 },
                 { name: "CSS", percent: 90 },
                 { name: "JavaScript", percent: 90 },
+                { name: "Typescript", percent: 80 },
+                { name: "React", percent: 80 },
+                { name: "Next.js", percent: 80 },
+                { name: "React Native", percent: 75 },
               ]}
             />
             <Dropdown
               icon="/images/icons/layout.svg"
               title="Designer"
-              items={[{ name: "Figma", percent: 90 }]}
+              items={[{ name: "Figma", percent: 80 }]}
             />
             <Dropdown
               icon="/images/icons/hard-drives.svg"
               title="Back-end"
               items={[
-                { name: "Node", percent: 90 },
-                { name: "Express", percent: 90 },
-                { name: "MongoDB", percent: 90 },
+                { name: "Node", percent: 80 },
+                { name: "Express", percent: 80 },
+                { name: "MySQL", percent: 80 },
+                { name: "PostgreSQL", percent: 80 },
               ]}
             />
           </div>
+        </div>
+      </div>
+
+      <div className="container" id="projetos"></div>
+
+      <div className="container" id="contato">
+        <h2 className="text-center fw-bold mt-5">Contato</h2>
+        <p className="text-center">
+          Entre em contato comigo através dos botões abaixo!
+        </p>
+        <Image
+          src="/images/contato.png"
+          alt="Celular"
+          className="d-block mx-auto mt-5 mb-5"
+          width={400}
+          height={400}
+        />
+        <div className="d-flex justify-content-evenly">
+          <Button wide text="E-mail" icon="/images/icons/envelope.svg" />
+          <Button wide text="Linkedin" icon="/images/icons/linkedin-logo.svg" />
+          <Button wide text="Github" icon="/images/icons/github-logo.svg" />
         </div>
       </div>
     </div>
