@@ -1,12 +1,5 @@
-html {
-  background-color: #f5f5f5;
-}
-
-#home {
-  height: 90vh;
-}
-
 body {
+  background-color: #f5f5f5 !important;
   background-image: url('/images/fundo.png');
   background-repeat: no-repeat;
   background-position: top right;  
@@ -15,6 +8,7 @@ body {
 li {
   list-style: none;
 }
+
 
 .pink {
   color: #FB6F92;
@@ -26,9 +20,15 @@ li {
   font-weight: bold !important;
 }
 
+
+#home {
+  height: 90vh;
+}
+
 .box-home {
   width: 80%;
 }
+
 
 .navbar{
   background-color: transparent !important;
@@ -39,7 +39,7 @@ li {
 }
 
 .nav-item a {
-  color: white !important;
+  color: white;
   font-weight: bold;
 }
 
@@ -60,10 +60,10 @@ li {
   width: 80%;
 }
 
+
 .dropdown{
   margin: 20px 0;
 }
-
 
 .dropdown-title {
   display: flex;
@@ -71,6 +71,53 @@ li {
   width: 100%;
   border: 0;
   background-color: inherit;
+}
+
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card-carousel {
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  margin-right: 20px;
+  width: 33%;
+  flex: none;
+}
+
+.card-carousel .image {
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  font-size: 0.9rem;
+}
+
+.buttons {
+  width: 100%;
+  text-align: center;
+}
+
+
+.image-contato {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+.footer {
+  padding: 20px;
+  background-color: #FB6F92;
+  color: white;
+  margin-top: 20px;
 }
 
 @media (min-width: 1400px) {
@@ -89,4 +136,11 @@ li {
   button {
     font-size: 1.2rem;
   }  
+}
+
+@media (max-width: 991px) {
+  .card-carousel {
+    width: 100%;
+    margin-right: 5px;
+  }
 }

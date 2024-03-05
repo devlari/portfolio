@@ -1,18 +1,43 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function Header() {
   const [show, setShow] = useState(false);
+  const [menuWhite, setMenuWhite] = useState(false);
 
   function toggleMenu() {
     setShow(!show);
   }
 
+  useEffect(() => {
+    console.log("aqui");
+
+    function handleScroll() {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      if (scrollTop > 100) {
+        setMenuWhite(true);
+      } else {
+        setMenuWhite(false);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar sticky-top navbar-expand-md onTop">
+    <nav
+      className={`navbar sticky-top navbar-expand-md onTop ${
+        menuWhite && "bg-white shadow-sm"
+      } `}
+    >
       <div className="container-fluid">
-        <a className="navbar-brand fw-bold mt-3" href="#Home">
+        <a className="navbar-brand fw-bold p-3" href="#Home">
           <span className="text-black">&lt; Dev</span>
           <span className="pink">Lari /&gt;</span>
         </a>
@@ -33,22 +58,34 @@ export default function Header() {
         >
           <ul className="navbar-nav" id="navbarNav">
             <li className="nav-item">
-              <a className="nav-link" href="#sobre">
+              <a
+                className={`nav-link ${menuWhite && "text-black"}`}
+                href="#sobre"
+              >
                 Sobre
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#habilidades">
+              <a
+                className={`nav-link ${menuWhite && "text-black"}`}
+                href="#habilidades"
+              >
                 Habilidades
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#projetos">
+              <a
+                className={`nav-link ${menuWhite && "text-black"}`}
+                href="#projetos"
+              >
                 Projetos
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contato">
+              <a
+                className={`nav-link ${menuWhite && "text-black"}`}
+                href="#contato"
+              >
                 Contato
               </a>
             </li>

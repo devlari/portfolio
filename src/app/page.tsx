@@ -1,8 +1,9 @@
-import { Browsers } from "@phosphor-icons/react";
 import Button from "./components/ui/Button";
 import Header from "./components/ui/Header";
 import Image from "next/image";
 import Dropdown from "./components/ui/Dropdown";
+import Carousel from "./components/ui/Carousel";
+import Footer from "./components/ui/Footer";
 
 export default function Home() {
   return (
@@ -111,26 +112,61 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container" id="projetos"></div>
+      <div className="container-fluid" id="projetos">
+        <h2 className="text-center fw-bold mt-5 mb-4">Projetos</h2>
+        <Carousel
+          items={[
+            {
+              image: "/images/projects/pokeapi.png",
+              title: "Pokedex",
+              description:
+                "Desenvolvida com Next.js, consome a PokeAPI. É uma single-page application que lista todos os pokémons, e pode ser filtrada por nome ou ID.",
+              linkGithub: "https://github.com/devlari/pokeapi",
+              linkSite: "https://pokeapi-devlari.vercel.app/",
+              linkFigma:
+                "https://www.figma.com/file/Gx8ItNOh7KGNM07fH67qCJ/PokeAPI?type=design&node-id=0%3A1&mode=design&t=5mgzSzh5IYXXR484-1",
+            },
+            {
+              image: "/images/projects/gamechoose.png",
+              title: "GameChoose",
+              description:
+                "Site fictício de compra de jogos online, incialmente feito com HTML, CSS, Javascrpt e Bulma.",
+            },
+          ]}
+        />
+      </div>
 
       <div className="container" id="contato">
         <h2 className="text-center fw-bold mt-5">Contato</h2>
         <p className="text-center">
           Entre em contato comigo através dos botões abaixo!
         </p>
-        <Image
-          src="/images/contato.png"
-          alt="Celular"
-          className="d-block mx-auto mt-5 mb-5"
-          width={400}
-          height={400}
-        />
+        <div className="image-contato">
+          <Image
+            src="/images/contato.png"
+            alt="Celular"
+            layout="responsive"
+            className="d-block mx-auto"
+            width={0}
+            height={0}
+          />
+        </div>
         <div className="d-flex justify-content-evenly">
           <Button wide text="E-mail" icon="/images/icons/envelope.svg" />
-          <Button wide text="Linkedin" icon="/images/icons/linkedin-logo.svg" />
-          <Button wide text="Github" icon="/images/icons/github-logo.svg" />
+          <Button
+            wide
+            text="Linkedin"
+            icon="/images/icons/linkedin-logo-white.svg"
+          />
+          <Button
+            wide
+            text="Github"
+            icon="/images/icons/github-logo-white.svg"
+          />
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

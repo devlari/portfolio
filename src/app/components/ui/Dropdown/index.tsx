@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { DropdownItem, ItemProps } from "./item";
-import { CaretDown, CaretUp } from "@phosphor-icons/react";
+import { RxCaretDown } from "react-icons/rx";
+import { RxCaretUp } from "react-icons/rx";
 
 type Props = {
   title: string;
@@ -30,9 +31,9 @@ export default function Dropdown({ title, items, icon }: Props) {
         </div>
 
         {open ? (
-          <CaretUp size={64} color="#FB6F92" />
+          <RxCaretUp size={64} color="#FB6F92" />
         ) : (
-          <CaretDown size={64} color="#FB6F92" />
+          <RxCaretDown size={64} color="#FB6F92" />
         )}
       </button>
       {open && (
