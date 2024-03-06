@@ -1,4 +1,3 @@
-import Button from "./components/ui/Button";
 import Header from "./components/ui/Header";
 import Image from "next/image";
 import Dropdown from "./components/ui/Dropdown";
@@ -73,7 +72,15 @@ export default function Home() {
                   Native!
                 </p>
               </div>
-              <Button text="Baixe meu currículo" />
+              <a
+                href="/assets/curriculo.pdf"
+                download="cv-larissa-sousa"
+                target="_blank"
+                rel="noreferrer"
+                className="btn bg-pink"
+              >
+                Baixe meu currículo
+              </a>
             </div>
           </div>
         </div>
