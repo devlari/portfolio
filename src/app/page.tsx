@@ -4,6 +4,7 @@ import Image from "next/image";
 import Dropdown from "./components/ui/Dropdown";
 import Carousel from "./components/ui/Carousel";
 import Footer from "./components/ui/Footer";
+import Link from "./components/ui/Link";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Header />
       <div className="container" id="home">
         <div className="row">
-          <div className="col-md-6 d-flex align-items-center">
+          <div className="col-md-6 col-11 offset-1 offset-md-0 d-flex align-items-center">
             <div className="box-home">
               <span className="fw-bold">Oi, meu nome é</span>
               <h1 className="title-home fw-bold">Larissa Sousa</h1>
@@ -22,10 +23,12 @@ export default function Home() {
                 Estou na área de desenvolvimento desde 2021, e possuo
                 experiência com diversas linguagens e frameworks.
               </p>
-              <Button text="Conheça meus projetos" />
+              <a className="btn bg-pink" href="#projetos">
+                Conheça meus projetos
+              </a>
             </div>
           </div>
-          <div className="col-md-6 d-flex justify-content-center">
+          <div className="col-md-6 d-none d-md-block d-flex justify-content-center">
             <Image
               src="/images/PC.png"
               alt="PC"
@@ -49,7 +52,7 @@ export default function Home() {
               height={300}
             />
           </div>
-          <div className="col-md-6 d-flex align-items-center">
+          <div className="col-md-6 col-12 d-flex align-items-center">
             <div className="box-sobre">
               <div className="box-sobre-text">
                 <p>
@@ -120,7 +123,7 @@ export default function Home() {
               image: "/images/projects/pokeapi.png",
               title: "Pokedex",
               description:
-                "Desenvolvida com Next.js, consome a PokeAPI. É uma single-page application que lista todos os pokémons, e pode ser filtrada por nome ou ID.",
+                "Desenvolvida com Next.js, consome a PokeAPI. É uma SPA que lista pokémons, e pode ser filtrada por nome ou ID.",
               linkGithub: "https://github.com/devlari/pokeapi",
               linkSite: "https://pokeapi-devlari.vercel.app/",
               linkFigma:
@@ -130,7 +133,10 @@ export default function Home() {
               image: "/images/projects/gamechoose.png",
               title: "GameChoose",
               description:
-                "Site fictício de compra de jogos online, incialmente feito com HTML, CSS, Javascrpt e Bulma.",
+                "Site fictício de compra de jogos online, incialmente feito com HTML, CSS, Javascript e Bulma.",
+              linkFigma:
+                "https://www.figma.com/file/e3IuNTvejzuZRgU8mxBpi3/GameChoose?type=design&mode=design&t=GwXB0myPS3MMVnYS-1",
+              linkGithub: "https://github.com/devlari/gamechoose",
             },
           ]}
         />
@@ -152,16 +158,22 @@ export default function Home() {
           />
         </div>
         <div className="d-flex justify-content-evenly">
-          <Button wide text="E-mail" icon="/images/icons/envelope.svg" />
-          <Button
-            wide
-            text="Linkedin"
-            icon="/images/icons/linkedin-logo-white.svg"
+          <Link
+            icon="/images/icons/envelope.svg"
+            text="E-mail"
+            href="mailto:lrss.sousa.silva@gmail.com"
           />
-          <Button
-            wide
-            text="Github"
+
+          <Link
+            icon="/images/icons/linkedin-logo-white.svg"
+            text="Linkedin"
+            href="https://www.linkedin.com/in/larissa-sousa-silva-491893204/"
+          />
+
+          <Link
             icon="/images/icons/github-logo-white.svg"
+            text="Github"
+            href="https://github.com/devlari"
           />
         </div>
       </div>

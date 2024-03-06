@@ -35,6 +35,10 @@ export default function CardCarousel({ item }: Props) {
             target="_blank"
             rel="noreferrer"
             className="me-3 bg-pink btn"
+            style={{
+              backgroundColor: item.linkFigma ? "#FB6F92" : "#E5E5E5!important",
+              cursor: item.linkFigma ? "pointer" : "not-allowed",
+            }}
           >
             <Image
               width={32}
@@ -48,6 +52,12 @@ export default function CardCarousel({ item }: Props) {
             target="_blank"
             rel="noreferrer"
             className="me-3 bg-pink btn"
+            style={{
+              backgroundColor: item.linkGithub
+                ? "#FB6F92"
+                : "#E5E5E5!important",
+              cursor: item.linkGithub ? "pointer" : "not-allowed",
+            }}
           >
             <Image
               width={32}
@@ -60,7 +70,11 @@ export default function CardCarousel({ item }: Props) {
             href={item.linkSite}
             target="_blank"
             rel="noreferrer"
-            className="me-3 bg-pink btn"
+            className="me-3 btn"
+            style={{
+              backgroundColor: item.linkSite ? "#FB6F92" : "#E5E5E5!important",
+              cursor: item.linkSite ? "pointer" : "not-allowed",
+            }}
           >
             <Image
               width={32}
