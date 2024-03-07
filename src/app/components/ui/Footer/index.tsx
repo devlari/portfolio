@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-8">
-            <span className="fw-bold">2024 ©️ devlari.com️</span>
+            <span className="fw-bold">2024 ©️ devlari.vercel.app</span>
           </div>
           <div className="col-4 d-flex justify-content-end">
             <a className="navbar-brand fw-bold" href="#Home">
