@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Button from "../../Button";
 
 export type ItemCard = {
   image: string;
@@ -24,6 +23,7 @@ export default function CardCarousel({ item }: Props) {
           height={0}
           src={item.image}
           alt={item.title}
+          unoptimized
         />
       </div>
       <div className="card-info">
@@ -45,6 +45,7 @@ export default function CardCarousel({ item }: Props) {
               height={32}
               src="/images/icons/figma-logo.svg"
               alt="Figma"
+              unoptimized
             />
           </a>
           <a
@@ -64,6 +65,7 @@ export default function CardCarousel({ item }: Props) {
               height={32}
               src="/images/icons/github-logo.svg"
               alt="Github"
+              unoptimized
             />
           </a>
           <a
@@ -81,6 +83,7 @@ export default function CardCarousel({ item }: Props) {
               height={32}
               src="/images/icons/browser.svg"
               alt="Site"
+              unoptimized
             />
           </a>
         </div>

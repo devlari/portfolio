@@ -18,7 +18,7 @@ export default function Dropdown({ title, items, icon }: Props) {
     <div className="dropdown">
       <button className="dropdown-title" onClick={() => setOpen(!open)}>
         <div>
-          <Image src={icon} alt="icon" width={64} height={64} />
+          <Image src={icon} alt="icon" width={64} height={64} unoptimized />
 
           <span
             className="fw-bold ms-2 p-1"

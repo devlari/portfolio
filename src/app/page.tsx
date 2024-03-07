@@ -35,6 +35,7 @@ export default function Home() {
               height={0}
               sizes="80vw"
               style={{ width: "90%", height: "auto" }}
+              unoptimized
             />
           </div>
         </div>
@@ -49,6 +50,7 @@ export default function Home() {
               alt="Minha foto"
               width={300}
               height={300}
+              unoptimized
             />
           </div>
           <div className="col-md-6 col-12 d-flex align-items-center">
@@ -162,6 +164,7 @@ export default function Home() {
             className="d-block mx-auto"
             width={0}
             height={0}
+            unoptimized
           />
         </div>
         <div className="d-flex justify-content-evenly">
