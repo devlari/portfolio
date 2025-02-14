@@ -28,7 +28,7 @@ export default function CardCarousel({ item }: Props) {
       </div>
       <div className="card-info">
         <h5 className="text-center fw-bold">{item.title}</h5>
-        <p className="text-center">{item.description}</p>
+        <p className="text-center" style={{minHeight: "60px"}}>{item.description}</p>
         <div className="d-flex justify-content-center">
           <a
             href={item.linkFigma ?? ""}
