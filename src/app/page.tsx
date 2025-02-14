@@ -57,7 +57,7 @@ export default function Home() {
             <div className="box-sobre">
               <div className="box-sobre-text">
                 <p>
-                  Olá e seja bem-vindo! Meu nome é Larissa, tenho 21 anos e sou
+                  Olá e seja bem-vindo! Meu nome é Larissa, tenho 22 anos e sou
                   desenvolvedora full-stack.
                 </p>
                 <p>
@@ -66,7 +66,7 @@ export default function Home() {
                 </p>
                 <p>
                   Em 2021, iniciei graduação em Análise e Desenvolvimento de
-                  Sistemas e atualmente estou na minha pós-graduação em
+                  Sistemas e em 2025 concluí pós-graduação em
                   Engenharia de Software com Métodos Ágeis.
                 </p>
                 <p>
@@ -103,6 +103,8 @@ export default function Home() {
                 { name: "React", percent: 80 },
                 { name: "Next.js", percent: 80 },
                 { name: "React Native", percent: 75 },
+                { name: "Angular", percent: 70 },
+                { name: "Vue", percent: 80 },
               ]}
             />
             <Dropdown
@@ -147,6 +149,27 @@ export default function Home() {
                 "https://www.figma.com/file/e3IuNTvejzuZRgU8mxBpi3/GameChoose?type=design&mode=design&t=GwXB0myPS3MMVnYS-1",
               linkGithub: "https://github.com/devlari/gamechoose",
             },
+            {
+              image: "/images/projects/prounion.png",
+              title: "ProUnion - Landing Page",
+              description:
+                "Landing page da empresa de tecnologia ProUnion, feita com HTML, CSS e Javascript.",
+              linkSite: "https://prounion.com.br/"
+            },
+            {
+              image: "/images/projects/proc.png",
+              title: "Sistema PROC - Landing Page",
+              description:
+                "Landing page do SAAS (Software as a Service) PROC, feita com HTML, CSS e Javascript.",
+              linkSite: "https://sistemaproc.com.br/"
+            },
+            {
+              image: "/images/projects/wikiproc.png",
+              title: "Wiki PROC",
+              description:
+                "Blog de tutoriais e dicas sobre o software PROC, feito com Wordpress.",
+              linkSite: "https://wiki.sistemaproc.com.br/"
+            }
           ]}
         />
       </div>
