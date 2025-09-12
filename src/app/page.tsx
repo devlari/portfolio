@@ -19,8 +19,8 @@ export default function Home() {
                 Eu desenvolvo <span className="pink">websites</span>
               </h2>
               <p>
-                Estou na área de desenvolvimento desde 2021, e possuo
-                experiência com diversas linguagens e frameworks.
+                Estou na área de desenvolvimento desde 2021, e possuo experiência com diversas
+                linguagens e frameworks.
               </p>
               <a className="btn bg-pink" href="#projetos">
                 Conheça meus projetos
@@ -45,34 +45,24 @@ export default function Home() {
         <h2 className="text-center fw-bold mb-5">Sobre mim</h2>
         <div className="row">
           <div className="col-md-6 d-flex justify-content-center">
-            <Image
-              src="/images/eu.png"
-              alt="Minha foto"
-              width={300}
-              height={300}
-              unoptimized
-            />
+            <Image src="/images/eu.png" alt="Minha foto" width={300} height={300} unoptimized />
           </div>
           <div className="col-md-6 col-12 d-flex align-items-center">
             <div className="box-sobre">
               <div className="box-sobre-text">
                 <p>
-                  Olá e seja bem-vindo! Meu nome é Larissa, tenho 22 anos e sou
-                  desenvolvedora full-stack.
+                  Olá e seja bem-vindo! Meu nome é Larissa, tenho 22 anos e sou desenvolvedora
+                  full-stack.
                 </p>
                 <p>
-                  Iniciei em 2018, no ensino técnico de informática na ETEC
-                  Professor Horácio Augusto da Silveira.
+                  Iniciei em 2018, no ensino técnico de informática na ETEC Professor Horácio
+                  Augusto da Silveira.
                 </p>
                 <p>
-                  Em 2021, iniciei graduação em Análise e Desenvolvimento de
-                  Sistemas e em 2025 concluí pós-graduação em
-                  Engenharia de Software com Métodos Ágeis.
+                  Em 2021, iniciei graduação em Análise e Desenvolvimento de Sistemas e em 2025
+                  concluí pós-graduação em Engenharia de Software com Métodos Ágeis.
                 </p>
-                <p>
-                  Hoje, trabalho principalmente com Next.js, Node e React
-                  Native!
-                </p>
+                <p> Hoje, trabalho principalmente com Next.js, Node e React Native! </p>
               </div>
               <a
                 href="/assets/curriculo.pdf"
@@ -154,31 +144,28 @@ export default function Home() {
               title: "ProUnion - Landing Page",
               description:
                 "Landing page da empresa de tecnologia ProUnion, feita com HTML, CSS e Javascript.",
-              linkSite: "https://prounion.com.br/"
+              linkSite: "https://prounion.com.br/",
             },
             {
               image: "/images/projects/proc.png",
               title: "Sistema PROC - Landing Page",
               description:
                 "Landing page do SAAS (Software as a Service) PROC, feita com HTML, CSS e Javascript.",
-              linkSite: "https://sistemaproc.com.br/"
+              linkSite: "https://sistemaproc.com.br/",
             },
             {
               image: "/images/projects/wikiproc.png",
               title: "Wiki PROC",
-              description:
-                "Blog de tutoriais e dicas sobre o software PROC, feito com Wordpress.",
-              linkSite: "https://wiki.sistemaproc.com.br/"
-            }
+              description: "Blog de tutoriais e dicas sobre o software PROC, feito com Wordpress.",
+              linkSite: "https://wiki.sistemaproc.com.br/",
+            },
           ]}
         />
       </div>
 
       <div className="container" id="contato">
         <h2 className="text-center fw-bold mt-5">Contato</h2>
-        <p className="text-center">
-          Entre em contato comigo através dos botões abaixo!
-        </p>
+        <p className="text-center">Entre em contato comigo através dos botões abaixo!</p>
         <div className="image-contato">
           <Image
             src="/images/contato.png"
