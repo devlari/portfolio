@@ -1,3 +1,4 @@
+import styles from "./CardCarousel.module.css";
 import Image from "next/image";
 
 export type ItemCard = {
@@ -15,20 +16,15 @@ export type Props = {
 
 export default function CardCarousel({ item }: Props) {
   return (
-    <div className="card-carousel">
-      <div className="image">
-        <Image
-          layout="responsive"
-          width={0}
-          height={0}
-          src={item.image}
-          alt={item.title}
-          unoptimized
-        />
+    <div className={styles.cardCarousel}>
+      <div className={styles.image}>
+        <Image width={300} height={300} src={item.image} alt={item.title} unoptimized />
       </div>
-      <div className="card-info">
+      <div className={styles.cardInfo}>
         <h5 className="text-center fw-bold">{item.title}</h5>
-        <p className="text-center" style={{minHeight: "60px"}}>{item.description}</p>
+        <p className="text-center" style={{ minHeight: "60px" }}>
+          {item.description}
+        </p>
         <div className="d-flex justify-content-center">
           <a
             href={item.linkFigma ?? ""}
@@ -54,9 +50,7 @@ export default function CardCarousel({ item }: Props) {
             rel="noreferrer"
             className="me-3 bg-pink btn"
             style={{
-              backgroundColor: item.linkGithub
-                ? "#FB6F92"
-                : "#E5E5E5!important",
+              backgroundColor: item.linkGithub ? "#FB6F92" : "#E5E5E5!important",
               cursor: item.linkGithub ? "pointer" : "not-allowed",
             }}
           >
@@ -78,13 +72,7 @@ export default function CardCarousel({ item }: Props) {
               cursor: item.linkSite ? "pointer" : "not-allowed",
             }}
           >
-            <Image
-              width={32}
-              height={32}
-              src="/images/icons/browser.svg"
-              alt="Site"
-              unoptimized
-            />
+            <Image width={32} height={32} src="/images/icons/browser.svg" alt="Site" unoptimized />
           </a>
         </div>
       </div>

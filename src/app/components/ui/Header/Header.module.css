@@ -1,0 +1,12 @@
+.navbar {
+  background-color: transparent !important;
+}
+
+.nav-item {
+  margin-right: 50px;
+}
+
+.nav-item a {
+  color: white;
+  font-weight: bold;
+}

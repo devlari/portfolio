@@ -1,0 +1,33 @@
+.footer {
+  padding: 20px;
+  background-color: #fb6f92;
+  color: white;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footerText {
+  font-weight: bold;
+}
+
+.footerBrand {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footerBrand span.text-black {
+  color: black;
+}
+
+.footerBrand span.text-white {
+  color: white;
+}
