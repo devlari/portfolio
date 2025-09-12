@@ -20,14 +20,6 @@ li {
   font-weight: bold !important;
 }
 
-#home {
-  height: 95%;
-}
-
-.box-home {
-  width: 80%;
-}
-
 .navbar {
   background-color: transparent !important;
 }
@@ -114,14 +106,6 @@ li {
 }
 
 @media (min-width: 1400px) {
-  .title-home {
-    font-size: 3rem;
-  }
-
-  .subtitle-home {
-    font-size: 2.5rem;
-  }
-
   p {
     font-size: 1.2rem;
   }
@@ -157,13 +141,6 @@ li {
 @media (max-width: 768px) {
   body {
     background-image: none;
-  }
-
-  #home {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .box-sobre {

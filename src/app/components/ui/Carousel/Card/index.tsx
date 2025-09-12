@@ -17,14 +17,7 @@ export default function CardCarousel({ item }: Props) {
   return (
     <div className="card-carousel">
       <div className="image">
-        <Image
-          layout="responsive"
-          width={0}
-          height={0}
-          src={item.image}
-          alt={item.title}
-          unoptimized
-        />
+        <Image width={0} height={0} src={item.image} alt={item.title} unoptimized />
       </div>
       <div className="card-info">
         <h5 className="text-center fw-bold">{item.title}</h5>
