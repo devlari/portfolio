@@ -20,35 +20,6 @@ li {
   font-weight: bold !important;
 }
 
-.navbar {
-  background-color: transparent !important;
-}
-
-.nav-item {
-  margin-right: 50px;
-}
-
-.nav-item a {
-  color: white;
-  font-weight: bold;
-}
-
-#sobre {
-  padding: 50px;
-  /* background-image: url('/images/fundo-sobre.png');
-  background-repeat: no-repeat; */
-}
-
-.box-sobre {
-  width: 80%;
-}
-
-.box-sobre-text {
-  border-left: 3px solid #fb6f92;
-  padding-left: 20px;
-  width: 80%;
-}
-
 .dropdown {
   margin: 20px 0;
 }
