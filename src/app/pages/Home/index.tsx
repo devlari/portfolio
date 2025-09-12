@@ -3,7 +3,7 @@ import styles from "./HomePage.module.css";
 
 export default function HomePage() {
   return (
-    <section className={styles.home} id="Home">
+    <section className={styles.home} id="home">
       <div className={styles.homeContent}>
         <div className={styles.left}>
           <header className={styles.intro}>

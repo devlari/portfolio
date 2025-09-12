@@ -1,4 +1,5 @@
 "use client";
+import styles from "./Header.module.css";
 
 import React, { useEffect, useRef, useState } from "react";
 
@@ -32,10 +33,10 @@ export default function Header() {
 
   return (
     <nav
-      className={`navbar sticky-top navbar-expand-md onTop ${menuWhite && "bg-white shadow-sm"} `}
+      className={`${styles.navbar} navbar sticky-top navbar-expand-md onTop ${menuWhite && "bg-white shadow-sm"} `}
     >
       <div className="container-fluid">
-        <a className="navbar-brand fw-bold p-3" href="#Home">
+        <a className="navbar-brand fw-bold p-3" href="#home">
           <span className="text-black">&lt; Dev</span>
           <span className="pink">Lari /&gt;</span>
         </a>
@@ -53,22 +54,22 @@ export default function Header() {
           id="navbarNav"
         >
           <ul className="navbar-nav" id="navbarNav">
-            <li className="nav-item">
+            <li className={styles["nav-item"]}>
               <a className={`nav-link ${menuWhite && "text-black"}`} href="#sobre">
                 Sobre
               </a>
             </li>
-            <li className="nav-item">
+            <li className={styles["nav-item"]}>
               <a className={`nav-link ${menuWhite && "text-black"}`} href="#habilidades">
                 Habilidades
               </a>
             </li>
-            <li className="nav-item">
+            <li className={styles["nav-item"]}>
               <a className={`nav-link ${menuWhite && "text-black"}`} href="#projetos">
                 Projetos
               </a>
             </li>
-            <li className="nav-item">
+            <li className={styles["nav-item"]}>
               <a className={`nav-link ${menuWhite && "text-black"}`} href="#contato">
                 Contato
               </a>

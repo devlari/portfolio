@@ -1,0 +1,26 @@
+.dropdown {
+  margin: 20px 0;
+}
+
+.dropdownTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.dropdownTitle div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdownList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}

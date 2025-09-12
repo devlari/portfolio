@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Footer() {
   return (
     <footer className="footer">
@@ -9,7 +7,7 @@ export default function Footer() {
             <span className="fw-bold">2024 ©️ devlari.vercel.app</span>
           </div>
           <div className="col-4 d-flex justify-content-end">
-            <a className="navbar-brand fw-bold" href="#Home">
+            <a className="navbar-brand fw-bold" href="#home">
               <span className="text-black">&lt; Dev</span>
               <span className="text-white">Lari /&gt;</span>
             </a>

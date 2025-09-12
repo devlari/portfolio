@@ -1,11 +1,11 @@
 import HomePage from "./pages/Home";
 import Header from "./components/ui/Header";
 import Image from "next/image";
-import Dropdown from "./components/ui/Dropdown";
 import Carousel from "./components/ui/Carousel";
 import Footer from "./components/ui/Footer";
 import Link from "./components/ui/Link";
 import SobrePage from "./pages/Sobre";
+import HabilidadesPage from "./pages/Habilidades";
 
 export default function Home() {
   return (
@@ -16,43 +16,7 @@ export default function Home() {
 
       <SobrePage />
 
-      <div className="container" id="habilidades">
-        <h2 className="text-center fw-bold mt-5">Habilidades</h2>
-        <div className="row">
-          <div className="col-md-10 offset-md-1">
-            <Dropdown
-              icon="/images/icons/browsers.svg"
-              title="Front-end"
-              items={[
-                { name: "HTML", percent: 90 },
-                { name: "CSS", percent: 90 },
-                { name: "JavaScript", percent: 90 },
-                { name: "Typescript", percent: 80 },
-                { name: "React", percent: 80 },
-                { name: "Next.js", percent: 80 },
-                { name: "React Native", percent: 75 },
-                { name: "Angular", percent: 70 },
-                { name: "Vue", percent: 80 },
-              ]}
-            />
-            <Dropdown
-              icon="/images/icons/layout.svg"
-              title="Designer"
-              items={[{ name: "Figma", percent: 80 }]}
-            />
-            <Dropdown
-              icon="/images/icons/hard-drives.svg"
-              title="Back-end"
-              items={[
-                { name: "Node", percent: 80 },
-                { name: "Express", percent: 80 },
-                { name: "MySQL", percent: 80 },
-                { name: "PostgreSQL", percent: 80 },
-              ]}
-            />
-          </div>
-        </div>
-      </div>
+      <HabilidadesPage />
 
       <div className="container-fluid" id="projetos">
         <h2 className="text-center fw-bold mt-5 mb-4">Projetos</h2>

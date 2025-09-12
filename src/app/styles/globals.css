@@ -20,18 +20,6 @@ li {
   font-weight: bold !important;
 }
 
-.dropdown {
-  margin: 20px 0;
-}
-
-.dropdown-title {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  border: 0;
-  background-color: inherit;
-}
-
 .carousel {
   display: flex;
   overflow-x: auto;
