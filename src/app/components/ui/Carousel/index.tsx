@@ -1,4 +1,5 @@
 "use client";
+import styles from "./Carousel.module.css";
 import { useRef } from "react";
 import CardCarousel, { ItemCard } from "./Card";
 import { RxCaretLeft } from "react-icons/rx";
@@ -25,14 +26,14 @@ export default function Carousel({ items }: Props) {
 
   return (
     <>
-      <div className="container carousel" ref={carousel}>
+      <div className={`container ${styles.carousel}`} ref={carousel}>
         {items.map((item, index) => (
           <CardCarousel item={item} key={index} />
         ))}
       </div>
       {quantity > 3 && (
         <>
-          <div className="buttons">
+          <div className={styles.buttons}>
             <button className="btn" onClick={handleLeftClick}>
               <RxCaretLeft size={64} color="#FB6F92" />
             </button>
