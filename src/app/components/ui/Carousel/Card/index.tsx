@@ -1,3 +1,4 @@
+import styles from "./CardCarousel.module.css";
 import Image from "next/image";
 
 export type ItemCard = {
@@ -15,11 +16,11 @@ export type Props = {
 
 export default function CardCarousel({ item }: Props) {
   return (
-    <div className="card-carousel">
-      <div className="image">
-        <Image width={0} height={0} src={item.image} alt={item.title} unoptimized />
+    <div className={styles.cardCarousel}>
+      <div className={styles.image}>
+        <Image width={300} height={300} src={item.image} alt={item.title} unoptimized />
       </div>
-      <div className="card-info">
+      <div className={styles.cardInfo}>
         <h5 className="text-center fw-bold">{item.title}</h5>
         <p className="text-center" style={{ minHeight: "60px" }}>
           {item.description}

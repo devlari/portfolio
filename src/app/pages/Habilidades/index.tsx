@@ -2,7 +2,7 @@ import Dropdown from "@/app/components/ui/Dropdown";
 
 export default function HabilidadesPage() {
   return (
-    <div className="container" id="habilidades">
+    <section className="container" id="habilidades">
       <h2 className="text-center fw-bold mt-5">Habilidades</h2>
       <div className="row">
         <div className="col-md-10 offset-md-1">
@@ -38,6 +38,6 @@ export default function HabilidadesPage() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

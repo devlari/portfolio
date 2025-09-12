@@ -12,8 +12,6 @@ export default function Header() {
   }
 
   useEffect(() => {
-    console.log("aqui");
-
     function handleScroll() {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
 

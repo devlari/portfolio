@@ -1,0 +1,29 @@
+.cardCarousel {
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  margin-right: 20px;
+  width: 33%;
+  flex: none;
+}
+
+.cardCarousel .image {
+  margin-bottom: 10px;
+}
+
+.cardInfo p {
+  font-size: 0.9rem;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .cardCarousel {
+    width: 100%;
+    margin-right: 5px;
+  }
+}
