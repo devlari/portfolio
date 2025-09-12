@@ -2,7 +2,7 @@ import Carousel from "@/app/components/ui/Carousel";
 
 export default function ProjetosPage() {
   return (
-    <div className="container-fluid" id="projetos">
+    <section className="container-fluid" id="projetos">
       <h2 className="text-center fw-bold mt-5 mb-4">Projetos</h2>
       <Carousel
         items={[
@@ -47,6 +47,6 @@ export default function ProjetosPage() {
           },
         ]}
       />
-    </div>
+    </section>
   );
 }
