@@ -32,9 +32,7 @@ export default function Header() {
 
   return (
     <nav
-      className={`navbar sticky-top navbar-expand-md onTop ${
-        menuWhite && "bg-white shadow-sm"
-      } `}
+      className={`navbar sticky-top navbar-expand-md onTop ${menuWhite && "bg-white shadow-sm"} `}
     >
       <div className="container-fluid">
         <a className="navbar-brand fw-bold p-3" href="#Home">
@@ -51,41 +49,27 @@ export default function Header() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className={`collapse navbar-collapse justify-content-end ${
-            show && "show"
-          }`}
+          className={`collapse navbar-collapse justify-content-end ${show && "show"}`}
           id="navbarNav"
         >
           <ul className="navbar-nav" id="navbarNav">
             <li className="nav-item">
-              <a
-                className={`nav-link ${menuWhite && "text-black"}`}
-                href="#sobre"
-              >
+              <a className={`nav-link ${menuWhite && "text-black"}`} href="#sobre">
                 Sobre
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className={`nav-link ${menuWhite && "text-black"}`}
-                href="#habilidades"
-              >
+              <a className={`nav-link ${menuWhite && "text-black"}`} href="#habilidades">
                 Habilidades
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className={`nav-link ${menuWhite && "text-black"}`}
-                href="#projetos"
-              >
+              <a className={`nav-link ${menuWhite && "text-black"}`} href="#projetos">
                 Projetos
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className={`nav-link ${menuWhite && "text-black"}`}
-                href="#contato"
-              >
+              <a className={`nav-link ${menuWhite && "text-black"}`} href="#contato">
                 Contato
               </a>
             </li>

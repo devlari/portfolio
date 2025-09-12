@@ -30,11 +30,7 @@ export default function Dropdown({ title, items, icon }: Props) {
           </span>
         </div>
 
-        {open ? (
-          <RxCaretUp size={64} color="#FB6F92" />
-        ) : (
-          <RxCaretDown size={64} color="#FB6F92" />
-        )}
+        {open ? <RxCaretUp size={64} color="#FB6F92" /> : <RxCaretDown size={64} color="#FB6F92" />}
       </button>
       {open && (
         <ul>
