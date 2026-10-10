@@ -1,27 +1,23 @@
-import HomePage from "./pages/Home";
 import Header from "./components/ui/Header";
 import Footer from "./components/ui/Footer";
-import SobrePage from "./pages/Sobre";
-import HabilidadesPage from "./pages/Habilidades";
-import ProjetosPage from "./pages/Projetos";
-import ContatoPage from "./pages/Contato";
+import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
+import Skills from "./components/sections/Skills";
+import Projects from "./components/sections/Projects";
+import Contact from "./components/sections/Contact";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header />
-
-      <HomePage />
-
-      <SobrePage />
-
-      <HabilidadesPage />
-
-      <ProjetosPage />
-
-      <ContatoPage />
-
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
