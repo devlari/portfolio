@@ -31,7 +31,7 @@ export default function Footer() {
             <a
               href="#home"
               aria-label="Voltar ao topo"
-              className="flex size-11 items-center justify-center rounded-full bg-ink text-white transition hover:-translate-y-0.5"
+              className="flex size-11 items-center justify-center rounded-full bg-ink text-surface transition hover:-translate-y-0.5"
             >
               <PiArrowUp size={22} />
             </a>

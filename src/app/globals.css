@@ -1,14 +1,20 @@
 @import "tailwindcss";
 
+/* Tema escuro ativado por data-theme="dark" no <html> (ver layout.tsx) */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 @theme {
   /* Identidade visual: rosa DevLari + grafite das ilustrações */
   --color-brand: #fb6f92;
   --color-brand-light: #ff8fab;
   --color-brand-soft: #ffe5ec;
   --color-brand-strong: #d6406b;
+  --color-brand-deep: #e8557a;
   --color-ink: #263238;
   --color-ink-soft: #546e7a;
   --color-surface: #f5f5f5;
+  --color-card: #ffffff;
+  --color-line: rgb(0 0 0 / 0.06);
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
@@ -36,6 +42,21 @@
       transform: translateY(0);
     }
   }
+}
+
+/* Modo escuro: roxo com o mesmo brilho e saturação do rosa, sobre fundo grafite */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-brand: #b56ffb;
+  --color-brand-light: #9b5de5;
+  --color-brand-soft: #2c2040;
+  --color-brand-strong: #d0a4ff;
+  --color-brand-deep: #9d4ef0;
+  --color-ink: #eceaf2;
+  --color-ink-soft: #aaa4bb;
+  --color-surface: #131118;
+  --color-card: #1d1a24;
+  --color-line: rgb(255 255 255 / 0.08);
 }
 
 html {

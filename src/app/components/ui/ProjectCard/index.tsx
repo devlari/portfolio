@@ -15,7 +15,7 @@ export default function ProjectCard({ project }: Props) {
   ];
 
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-3xl bg-white shadow-sm shadow-black/5 ring-1 ring-black/5 transition duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-brand/15">
+    <article className="group flex h-full flex-col overflow-hidden rounded-3xl bg-card shadow-sm shadow-black/5 ring-1 ring-line transition duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-brand/15">
       <div className="relative aspect-[1858/924] overflow-hidden bg-brand-soft">
         <Image
           src={project.image}
@@ -43,7 +43,7 @@ export default function ProjectCard({ project }: Props) {
           ))}
         </ul>
 
-        <div className="mt-5 flex flex-wrap gap-2 border-t border-black/5 pt-5">
+        <div className="mt-5 flex flex-wrap gap-2 border-t border-line pt-5">
           {links
             .filter((link) => link.href)
             .map(({ href, label, icon: Icon }) => (
@@ -52,7 +52,7 @@ export default function ProjectCard({ project }: Props) {
                 href={href}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-1 rounded-full border border-black/10 px-3 py-1.5 text-sm font-bold transition hover:border-brand hover:bg-brand hover:text-white"
+                className="inline-flex items-center gap-1 rounded-full border border-line px-3 py-1.5 text-sm font-bold transition hover:border-brand hover:bg-brand hover:text-white"
               >
                 <Icon size={16} />
                 {label}

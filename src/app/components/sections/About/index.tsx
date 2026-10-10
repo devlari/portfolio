@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ThemedImage from "../../ui/ThemedImage";
 import { PiDownloadSimple } from "react-icons/pi";
 import { CAREER_START_YEAR, projects } from "../../../data";
 import { buttonStyles } from "../../ui/Button";
@@ -20,18 +20,19 @@ export default function About() {
       <div className="mx-auto grid max-w-6xl items-center gap-16 px-6 md:grid-cols-2">
         <Reveal className="relative isolate mx-auto w-full max-w-sm">
           <div className="absolute inset-4 -z-10 rotate-6 rounded-[3rem] bg-brand-soft" />
-          <Image
+          <ThemedImage
             src="/images/eu.png"
+            darkSrc="/images/eu-dark.png"
             alt="Foto de Larissa Sousa"
             width={1505}
             height={1505}
             sizes="(min-width: 768px) 384px, 90vw"
             className="w-full animate-float-slow"
           />
-          <span className="absolute -right-2 top-8 rounded-2xl bg-white px-4 py-2 font-mono text-sm font-bold shadow-lg ring-1 ring-black/5">
+          <span className="absolute -right-2 top-8 rounded-2xl bg-card px-4 py-2 font-mono text-sm font-bold shadow-lg ring-1 ring-line">
             <span className="text-brand">&lt;/&gt;</span> Full-Stack
           </span>
-          <span className="absolute -left-2 bottom-10 rounded-2xl bg-ink px-4 py-2 text-sm font-bold text-white shadow-lg">
+          <span className="absolute -left-2 bottom-10 rounded-2xl bg-ink px-4 py-2 text-sm font-bold text-surface shadow-lg">
             Next.js · Node · React Native
           </span>
         </Reveal>
@@ -67,7 +68,7 @@ export default function About() {
             {stats.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-2xl bg-white p-4 text-center shadow-sm ring-1 ring-black/5"
+                className="rounded-2xl bg-card p-4 text-center shadow-sm ring-1 ring-line"
               >
                 <dt className="sr-only">{stat.label}</dt>
                 <dd className="text-2xl font-extrabold text-brand-strong">

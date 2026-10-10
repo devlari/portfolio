@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ThemedImage from "../../ui/ThemedImage";
 import { PiArrowUpRight } from "react-icons/pi";
 import { contacts } from "../../../data";
 import Reveal from "../../ui/Reveal";
@@ -8,7 +8,7 @@ export default function Contact() {
     <section id="contato" className="py-24">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal>
-          <div className="relative grid items-center gap-10 overflow-hidden rounded-[2.5rem] bg-white p-8 shadow-xl shadow-black/5 ring-1 ring-black/5 md:grid-cols-2 md:p-14">
+          <div className="relative grid items-center gap-10 overflow-hidden rounded-[2.5rem] bg-card p-8 shadow-xl shadow-black/5 ring-1 ring-line md:grid-cols-2 md:p-14">
             <div
               className="absolute -right-24 -top-24 size-96 rounded-full bg-brand-soft"
               aria-hidden="true"
@@ -32,7 +32,7 @@ export default function Contact() {
                       href={href}
                       target="_blank"
                       rel="noreferrer"
-                      className="group flex items-center gap-4 rounded-2xl bg-surface p-4 ring-1 ring-black/5 transition hover:bg-brand hover:text-white"
+                      className="group flex items-center gap-4 rounded-2xl bg-surface p-4 ring-1 ring-line transition hover:bg-brand hover:text-white"
                     >
                       <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand text-white transition group-hover:bg-white group-hover:text-brand-strong">
                         <Icon size={22} />
@@ -54,8 +54,9 @@ export default function Contact() {
             </div>
 
             <div className="relative hidden md:block">
-              <Image
+              <ThemedImage
                 src="/images/contato.png"
+                darkSrc="/images/contato-dark.png"
                 alt="Ilustração de um celular com cartão de contato"
                 width={2000}
                 height={2000}

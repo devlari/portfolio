@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ThemedImage from "../../ui/ThemedImage";
 import { PiArrowRight, PiDownloadSimple } from "react-icons/pi";
 import { contacts } from "../../../data";
 import { buttonStyles } from "../../ui/Button";
@@ -29,7 +29,7 @@ export default function Hero() {
 
       <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 md:grid-cols-2">
         <div>
-          <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-sm font-bold text-ink shadow-sm ring-1 ring-black/5">
+          <span className="inline-flex items-center gap-2 rounded-full bg-card px-4 py-1.5 text-sm font-bold text-ink shadow-sm ring-1 ring-line">
             <span className="size-2 rounded-full bg-brand" />
             Desenvolvedora Full-Stack
           </span>
@@ -72,7 +72,7 @@ export default function Hero() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label={label}
-                  className="flex size-11 items-center justify-center rounded-full bg-white text-ink shadow-sm ring-1 ring-black/5 transition hover:-translate-y-0.5 hover:bg-brand hover:text-white"
+                  className="flex size-11 items-center justify-center rounded-full bg-card text-ink shadow-sm ring-1 ring-line transition hover:-translate-y-0.5 hover:bg-brand hover:text-white"
                 >
                   <Icon size={22} />
                 </a>
@@ -82,8 +82,9 @@ export default function Hero() {
         </div>
 
         <div className="hidden justify-center md:flex">
-          <Image
+          <ThemedImage
             src="/images/PC.png"
+            darkSrc="/images/PC-dark.png"
             alt="Ilustração de um computador com código na tela"
             width={1707}
             height={1707}
