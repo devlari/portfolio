@@ -9,7 +9,7 @@ export default function Skills() {
         <SectionTitle
           eyebrow="habilidades"
           title="Habilidades"
-          description="Tecnologias com as quais trabalho no dia a dia, do layout ao banco de dados."
+          description="Tecnologias com as quais trabalho no dia a dia, do layout à infraestrutura."
         />
 
         <div className="grid gap-6 md:grid-cols-3">
