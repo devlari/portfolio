@@ -34,7 +34,7 @@ export default function Header() {
           if (entry.isIntersecting) setActive(entry.target.id);
         });
       },
-      { rootMargin: "-45% 0px -50% 0px" },
+      { rootMargin: "-45% 0px -50% 0px" }
     );
 
     ["home", ...links.map((link) => link.id)].forEach((id) => {
@@ -51,9 +51,7 @@ export default function Header() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled || open
-          ? "bg-card/75 shadow-sm shadow-black/5 backdrop-blur-lg"
-          : "bg-transparent"
+        scrolled || open ? "bg-card/75 shadow-sm shadow-black/5 backdrop-blur-lg" : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -85,9 +83,7 @@ export default function Header() {
           >
             {links.map((link) => {
               const isActive = active === link.id;
-              const color = isActive
-                ? "text-brand-strong"
-                : "text-ink hover:text-brand-strong";
+              const color = isActive ? "text-brand-strong" : "text-ink hover:text-brand-strong";
               return (
                 <li key={link.id}>
                   <a
@@ -102,11 +98,7 @@ export default function Header() {
                     <span
                       className={`absolute inset-x-4 -bottom-0.5 hidden h-0.5 origin-left rounded-full bg-brand transition-transform duration-300 md:block ${
                         overBlobs ? "lg:bg-white" : ""
-                      } ${
-                        isActive
-                          ? "scale-x-100"
-                          : "scale-x-0 group-hover:scale-x-100"
-                      }`}
+                      } ${isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}
                     />
                   </a>
                 </li>

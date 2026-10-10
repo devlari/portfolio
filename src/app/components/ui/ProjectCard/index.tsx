@@ -28,9 +28,7 @@ export default function ProjectCard({ project }: Props) {
 
       <div className="flex flex-1 flex-col p-6">
         <h3 className="text-lg font-extrabold">{project.title}</h3>
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-soft">
-          {project.description}
-        </p>
+        <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-soft">{project.description}</p>
 
         <ul className="mt-4 flex flex-wrap gap-2" aria-label="Tecnologias">
           {project.tags.map((tag) => (

@@ -10,12 +10,8 @@ export default function Logo({ className = "", accent = "brand" }: Props) {
       className={`text-lg font-extrabold tracking-tight ${className}`}
       aria-label="DevLari - voltar ao início"
     >
-      <span className={accent === "brand" ? "text-ink" : "text-black/80"}>
-        &lt; Dev
-      </span>
-      <span className={accent === "brand" ? "text-brand" : "text-white"}>
-        Lari /&gt;
-      </span>
+      <span className={accent === "brand" ? "text-ink" : "text-black/80"}>&lt; Dev</span>
+      <span className={accent === "brand" ? "text-brand" : "text-white"}>Lari /&gt;</span>
     </a>
   );
 }

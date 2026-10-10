@@ -102,8 +102,7 @@ export const projects: Project[] = [
   {
     image: "/images/projects/wikiproc.png",
     title: "Wiki PROC",
-    description:
-      "Blog de tutoriais e dicas sobre o software PROC, feito com Wordpress.",
+    description: "Blog de tutoriais e dicas sobre o software PROC, feito com Wordpress.",
     tags: ["WordPress"],
     linkSite: "https://wiki.sistemaproc.com.br/",
   },

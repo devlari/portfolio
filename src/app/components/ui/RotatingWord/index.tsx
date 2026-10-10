@@ -11,10 +11,7 @@ export default function RotatingWord({ words, interval = 2500 }: Props) {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const timer = setInterval(
-      () => setIndex((current) => (current + 1) % words.length),
-      interval
-    );
+    const timer = setInterval(() => setIndex((current) => (current + 1) % words.length), interval);
     return () => clearInterval(timer);
   }, [words.length, interval]);
 

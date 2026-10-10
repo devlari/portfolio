@@ -6,8 +6,7 @@ const base =
 const variants: Record<Variant, string> = {
   primary:
     "bg-brand text-white shadow-lg shadow-brand/30 hover:bg-brand-deep hover:shadow-brand/40",
-  outline:
-    "border-2 border-brand text-brand-strong hover:bg-brand hover:text-white",
+  outline: "border-2 border-brand text-brand-strong hover:bg-brand hover:text-white",
 };
 
 export function buttonStyles(variant: Variant = "primary", className = "") {

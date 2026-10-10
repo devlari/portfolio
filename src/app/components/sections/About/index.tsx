@@ -38,29 +38,30 @@ export default function About() {
         </Reveal>
 
         <Reveal delay={150}>
-          <span className="font-mono text-sm font-semibold text-brand-strong">
-            &lt;sobre /&gt;
-          </span>
-          <h2 className="mt-2 text-3xl font-extrabold tracking-tight md:text-4xl">
-            Sobre mim
-          </h2>
+          <span className="font-mono text-sm font-semibold text-brand-strong">&lt;sobre /&gt;</span>
+          <h2 className="mt-2 text-3xl font-extrabold tracking-tight md:text-4xl">Sobre mim</h2>
 
-          <div className="mt-6 space-y-4 border-l-4 border-brand pl-6 leading-relaxed text-ink-soft">
+          <div className="mt-6 space-y-4 border-l-4 border-brand pl-6 leading-relaxed text-ink-soft [&_strong]:font-bold [&_strong]:text-ink">
             <p>
-              Olá e seja bem-vindo! Meu nome é Larissa, tenho 23 anos e sou
-              desenvolvedora full-stack.
+              Olá, eu sou a <strong>Larissa Sousa</strong>, desenvolvedora
+              <strong> full-stack</strong> apaixonada por tecnologia e criação de soluções digitais.
             </p>
             <p>
-              Iniciei em 2018, no ensino técnico de informática na ETEC
-              Professor Horácio Augusto da Silveira.
+              Minha jornada começou em 2018, no curso técnico de Informática da
+              <strong> ETEC Professor Horácio Augusto da Silveira</strong>, onde tive meu primeiro
+              contato com programação e desenvolvimento de sistemas.
             </p>
             <p>
-              Em 2021, iniciei graduação em Análise e Desenvolvimento de
-              Sistemas e em 2025 concluí pós-graduação em Engenharia de
-              Software com Métodos Ágeis.
+              Em 2021, iniciei a graduação em
+              <strong> Análise e Desenvolvimento de Sistemas</strong> e, em 2025, concluí a
+              pós-graduação em
+              <strong> Engenharia de Software com Métodos Ágeis</strong>, aprofundando meus
+              conhecimentos em boas práticas de desenvolvimento.
             </p>
             <p>
-              Hoje, trabalho principalmente com Next.js, Node e React Native!
+              Atualmente, atuo principalmente com <strong>Next.js</strong>,<strong> Node.js</strong>{" "}
+              e <strong>React Native</strong>, criando aplicações modernas, escaláveis e focadas na
+              melhor experiência para o usuário.
             </p>
           </div>
 
@@ -71,12 +72,8 @@ export default function About() {
                 className="rounded-2xl bg-card p-4 text-center shadow-sm ring-1 ring-line"
               >
                 <dt className="sr-only">{stat.label}</dt>
-                <dd className="text-2xl font-extrabold text-brand-strong">
-                  {stat.value}
-                </dd>
-                <dd className="mt-1 text-xs font-semibold text-ink-soft">
-                  {stat.label}
-                </dd>
+                <dd className="text-2xl font-extrabold text-brand-strong">{stat.value}</dd>
+                <dd className="mt-1 text-xs font-semibold text-ink-soft">{stat.label}</dd>
               </div>
             ))}
           </dl>

@@ -6,10 +6,7 @@ import RotatingWord from "../../ui/RotatingWord";
 
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="relative isolate flex min-h-svh items-center pb-16 pt-28"
-    >
+    <section id="home" className="relative isolate flex min-h-svh items-center pb-16 pt-28">
       {/* Mesmos círculos do antigo background.png, agora em SVG.
           Não é cortado pelo hero: o último círculo desce até o "Sobre". */}
       <svg
@@ -39,12 +36,11 @@ export default function Hero() {
             Larissa Sousa
           </h1>
           <h2 className="mt-3 text-2xl font-bold md:text-3xl lg:text-4xl">
-            Eu desenvolvo{" "}
-            <RotatingWord words={["websites", "aplicativos", "sistemas"]} />
+            Eu desenvolvo <RotatingWord words={["websites", "aplicativos", "sistemas"]} />
           </h2>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-ink-soft">
-            Estou na área de desenvolvimento desde 2021, e possuo experiência
-            com diversas linguagens e frameworks.
+            Estou na área de desenvolvimento desde 2021, e possuo experiência com diversas
+            linguagens e frameworks.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
