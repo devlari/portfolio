@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+/* Tema escuro ativado por data-theme="dark" no <html> (ver layout.tsx) */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  /* Identidade visual: rosa DevLari + grafite das ilustrações */
+  --color-brand: #fb6f92;
+  --color-brand-light: #ff8fab;
+  --color-brand-soft: #ffe5ec;
+  --color-brand-strong: #d6406b;
+  --color-brand-deep: #e8557a;
+  --color-ink: #263238;
+  --color-ink-soft: #546e7a;
+  --color-surface: #f5f5f5;
+  --color-card: #ffffff;
+  --color-line: rgb(0 0 0 / 0.06);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-float-slow: float 11s ease-in-out infinite;
+  --animate-word: word-in 0.5s ease-out both;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-14px);
+    }
+  }
+
+  @keyframes word-in {
+    from {
+      opacity: 0;
+      transform: translateY(0.4em);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Modo escuro: roxo com o mesmo brilho e saturação do rosa, sobre fundo grafite */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-brand: #b56ffb;
+  --color-brand-light: #9b5de5;
+  --color-brand-soft: #2c2040;
+  --color-brand-strong: #d0a4ff;
+  --color-brand-deep: #9d4ef0;
+  --color-ink: #eceaf2;
+  --color-ink-soft: #aaa4bb;
+  --color-surface: #131118;
+  --color-card: #1d1a24;
+  --color-line: rgb(255 255 255 / 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  @apply bg-surface text-ink antialiased;
+}
+
+::selection {
+  @apply bg-brand text-white;
+}
+
+/* Animação de entrada ao rolar (ver components/ui/Reveal) */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+  }
+}
