@@ -63,6 +63,15 @@ export const CAREER_START_YEAR = 2021;
 
 export const projects: Project[] = [
   {
+    image: "/images/projects/seu-grupo-em-numeros.png",
+    title: "Seu grupo em números",
+    description:
+      "Retrospectiva do grupo do WhatsApp em stories, prêmios e gráficos: quem fala mais, quem ri de tudo, quem some. Tudo roda no navegador, nada é enviado.",
+    tags: ["React", "TypeScript", "Vite", "ECharts"],
+    linkGithub: "https://github.com/devlari/seu-grupo-em-numeros",
+    linkSite: "https://seu-grupo-em-numeros.vercel.app/",
+  },
+  {
     image: "/images/projects/pokeapi.png",
     title: "Pokedex",
     description:
@@ -74,37 +83,12 @@ export const projects: Project[] = [
       "https://www.figma.com/file/Gx8ItNOh7KGNM07fH67qCJ/PokeAPI?type=design&node-id=0%3A1&mode=design&t=5mgzSzh5IYXXR484-1",
   },
   {
-    image: "/images/projects/gamechoose.png",
-    title: "GameChoose",
-    description:
-      "Site fictício de compra de jogos online, incialmente feito com HTML, CSS, Javascript e Bulma.",
-    tags: ["HTML", "CSS", "JavaScript", "Bulma"],
-    linkFigma:
-      "https://www.figma.com/file/e3IuNTvejzuZRgU8mxBpi3/GameChoose?type=design&mode=design&t=GwXB0myPS3MMVnYS-1",
-    linkGithub: "https://github.com/devlari/gamechoose",
-  },
-  {
     image: "/images/projects/prounion.png",
     title: "ProUnion - Landing Page",
     description:
       "Landing page da empresa de tecnologia ProUnion, feita com HTML, CSS e Javascript.",
     tags: ["HTML", "CSS", "JavaScript"],
     linkSite: "https://prounion.com.br/",
-  },
-  {
-    image: "/images/projects/proc.png",
-    title: "Sistema PROC - Landing Page",
-    description:
-      "Landing page do SAAS (Software as a Service) PROC, feita com HTML, CSS e Javascript.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    linkSite: "https://sistemaproc.com.br/",
-  },
-  {
-    image: "/images/projects/wikiproc.png",
-    title: "Wiki PROC",
-    description: "Blog de tutoriais e dicas sobre o software PROC, feito com Wordpress.",
-    tags: ["WordPress"],
-    linkSite: "https://wiki.sistemaproc.com.br/",
   },
 ];
 
